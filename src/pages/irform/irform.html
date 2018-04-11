@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Initial Referral form</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-item>
+	    <ion-label color="primary">Date of Referral:</ion-label>
+	    <ion-textarea placeholder=" DD/MM/YYYY"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Name of Child:</ion-label>
+	    <ion-textarea placeholder=" first,middle,surname"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Sex:</ion-label>
+	    <ion-select [(ngModel)]="sex">
+	    		<ion-option value="f">Female</ion-option>
+	    		<ion-option value="m">Male</ion-option>
+	 	</ion-select>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Age:</ion-label>
+	    <ion-textarea placeholder="date of birth or age"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Case Number:</ion-label>
+	    <ion-textarea placeholder=" case_number"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Address of Child:</ion-label>
+	    <ion-textarea placeholder="contact details"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Source of Referral:</ion-label>
+			<ion-select [(ngModel)]="SourceofReferral">
+		    	<ion-option value="s1">MVCC</ion-option>
+		    	<ion-option value="s2">Child Survivor</ion-option>
+		    	<ion-option value="s3">Parent(s) or Guardians</ion-option>
+		    	<ion-option value="s4">Other Family Member(s)</ion-option>
+		    	<ion-option value="s5">Neighbor or community member</ion-option>
+		    	<ion-option value="s6">Teacher</ion-option>
+		    	<ion-option value="s7">Police Officer</ion-option>
+		    	<ion-option value="s8">Village or Mtaa Administration</ion-option>
+		    	<ion-option value="s9">Other Professional</ion-option>
+		    	<ion-option value="s0">Child Helpline</ion-option>
+		    </ion-select>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Method of Referral:</ion-label>
+	    	<ion-select [(ngModel)]="MethodofReferral">
+		    	<ion-option value="m1">face to face</ion-option>
+		    	<ion-option value="m2">Telephone</ion-option>
+		    	<ion-option value="m3">Letter/Email</ion-option>
+		    	<ion-option value="m4">Other method</ion-option>
+			</ion-select>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Reason for Referral:</ion-label>
+	    <ion-textarea placeholder=" ReasonforReferral"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Prior History:</ion-label>
+	    <ion-textarea placeholder=" previous DSWO involvement with Child or Family"></ion-textarea>
+		</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Assessment of Intake SWO:</ion-label>
+	    <ion-textarea placeholder=" describe hazard/harm which a child is likely to face"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Cause of Concern:</ion-label>
+	   <ion-select [(ngModel)]="causeofConcern">
+		    	<ion-option value="c1">Yes</ion-option>
+		    	<ion-option value="c2">No</ion-option>
+		</ion-select>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Emergency Actions:</ion-label>
+	    <ion-textarea placeholder=" emergency action to be taken only if Cause of concern is Yes "></ion-textarea>
+	</ion-item>
+</ion-content>
+<ion-footer>
+<ion-row right>
+		<ion-col text-right>
+			<button ion-button (click)="onClickSubmitIR()">Submit</button>
+		</ion-col>
+</ion-row>
+</ion-footer>

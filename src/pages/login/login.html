@@ -1,0 +1,26 @@
+<<ion-header>
+  <ion-navbar>
+    <ion-title>
+     CP App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<form padding>
+ 	  <ion-item>
+      <ion-label color="primary" stacked>Username</ion-label>
+      <ion-input placeholder="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Password</ion-label>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-row center>
+      <ion-col text-center><button ion-button (click)="onGoToMainmenu()">login</button></ion-col> 
+    </ion-row>
+    <ion-row center>  
+      <ion-col text-center><button ion-button clear (click)="onGoToRegistration()">Register here...</button>  
+    </ion-col> 
+      </ion-row>
+  </form>
+</ion-content>

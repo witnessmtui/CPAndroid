@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Initial Investigation form</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-item>
+	    <ion-label color="primary">Name of Child:</ion-label>
+	    <ion-textarea placeholder=" first,middle,surname"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Case Number:</ion-label>
+	    <ion-textarea placeholder=" case_number"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Address of Child:</ion-label>
+	    <ion-textarea placeholder="contact details"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Sources of Information:</ion-label>
+	    	<ion-select multiple="true">
+		    	<ion-option value="s1">Child/Family's reopened file</ion-option>
+		    	<ion-option value="s2">Visit to the Child's home</ion-option>
+		    	<ion-option value="s3">Interview with the Child</ion-option>
+		    	<ion-option value="s4">Interview with the Parent, Carer  or Guardian</ion-option>
+		    	<ion-option value="s5">Interview with Siblings or Other family members</ion-option>
+		    	<ion-option value="s6">Interview with a neighbour/Community member</ion-option>
+		    	<ion-option value="s7">Interview with a Teacher</ion-option>
+		    	<ion-option value="s8">Interview with a Health worker</ion-option>
+		    	<ion-option value="s9">Medical Examination</ion-option>
+		    	<ion-option value="s0">Other</ion-option>
+		    <ion-textarea placeholder=" describe challenges faced during obtaining Information "></ion-textarea>
+		    </ion-select>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Emergency Action(s):</ion-label>
+	    <ion-select [(ngModel)]="emergencyAct">
+		    	<ion-option value="e1">Police Involvement</ion-option>
+		    	<ion-option value="e2">Medical Examination</ion-option>
+		 </ion-select>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Cause of Concern:</ion-label>
+	    <ion-textarea placeholder=" what harm a child suffered/at risk of suffering"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Risk Assessment:</ion-label>
+	    <ion-textarea placeholder=" ReasonforReferral"></ion-textarea>
+	</ion-item>
+	<ion-item>
+	    <ion-label color="primary">Outcome of Investigation and Suggested Action(s):</ion-label>
+			<ion-select [(ngModel)]="outcomeofInv">
+		    	<ion-option value="o1">The child is suffering harm or is at immediate risk of significant harm and emergency action is needed to safeguard the child</ion-option>
+		    	<ion-option value="o2">Reasonable cause to believe the child is suffering or at risk of harm and further SWO interventions are required</ion-option>
+		    	<ion-option value="o3">No reasonable cause to believe the child is suffering or at risk of harm,  but refer the family to MVCC/Service provider</ion-option>
+		    	<ion-option value="o4">No reasonable cause to believe the child is suffering or at risk of harm and no action required(case closed)</ion-option>
+		    </ion-select>
+	</ion-item>
+</ion-content>
+<ion-footer padding>
+	<ion-row right>
+		<ion-col text-right>
+			<button ion-button (click)="onClickSubmitII()">Submit</button>
+		</ion-col>
+	</ion-row>
+</ion-footer>

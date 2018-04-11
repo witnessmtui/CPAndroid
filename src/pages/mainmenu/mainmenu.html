@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Main Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-list>
+    <button ion-item>Fill forms</button>
+      <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr>
+	    <button ion-button clear (click)="onGoToII()">Initial Investigation</button><hr>
+    <button ion-item>View forms</button>  
+      <button ion-button clear  (click)="onGoToReceived()">Received Forms</button><hr>
+        <button ion-button clear (click)="onGoToIRView()"> IR View </button><hr>
+        <button ion-button clear (click)="onGoToIIView()"> II View </button><hr>
+      <button ion-button clear (click)="onGoToForms()">My Forms</button><hr>
+        <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr>
+        <button ion-button clear (click)="onGoToMyII()"> II Forms </button><hr>
+    <button ion-item (click)="onClickNotifications()">Notifications</button>
+    <button ion-item (click)="onClickEnroleCase()">Enrol Case</button>
+  </ion-list>
+</ion-content>
