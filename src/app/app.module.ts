@@ -9,10 +9,14 @@ import { IrviewPage } from '../pages/irview/irview';
 import { IiviewPage } from '../pages/iiview/iiview';
 import { EnrolPage } from '../pages/enrol/enrol';
 import { RegistrationPage } from '../pages/registration/registration';
-import { MainmenuPage } from '../pages/mainmenu/mainmenu';
 import { IrformPage } from '../pages/irform/irform';
+import { MainmenuPage } from '../pages/mainmenu/mainmenu';
 import { IiformPage } from '../pages/iiform/iiform';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import {IiformService} from "../services/iiform";
+
+
+
 
 @NgModule({
   declarations: [
@@ -49,6 +53,6 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+  ,IiformService]
 })
 export class AppModule {}

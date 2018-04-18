@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage} from 'ionic-angular';
+import {NgForm} from "@angular/forms";
+import {IiformService} from "../../services/iiform";
+
 
 @IonicPage()
 @Component({
@@ -7,9 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'iiform.html',
 })
 export class IiformPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-onClickSubmitII(){
-this.navCtrl.popToRoot();
-}
+	selectOptions = ['Police Involvement','Medical Examination'];
+
+  constructor(private iiService:IiformService){ 
+
+	}
+
+ onAddItem(form: NgForm){  
+ 	this.iiService.addItem(form.value.childName, form.value.caseNumber, form.value.contactNumber);
+ 	form.reset();
+ }
+ 
+
 }

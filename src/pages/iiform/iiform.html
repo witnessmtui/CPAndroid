@@ -4,19 +4,49 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-	<ion-item>
-	    <ion-label color="primary">Name of Child:</ion-label>
-	    <ion-textarea placeholder=" first,middle,surname"></ion-textarea>
+	<form #f="ngForm" (ngSubmit)="onAddItem(f)" standalone=true>
+		<ion-list>
+			<ion-item>
+				<ion-label stacked>Name of Child:</ion-label>
+				<ion-input type="text" name="childName" placeholder="first,middle,surname" ngModel required></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label stacked>Case Number:</ion-label>
+				<ion-input type="number" name="caseNumber" placeholder="case number" ngModel required></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label stacked>Address of Child:</ion-label>
+				<ion-input type="number" name="contactNumber" placeholder="contact detail" ngModel required></ion-input>
+			</ion-item>
+			<ion-item>
+			<ion-label floating>Emergency Action(s):</ion-label>
+		<ion-select>
+			<ion-option *ngFor="let option of selectOptions" [value]="option"> {{option}} </ion-option>
+		</ion-select>
 	</ion-item>
+
+		</ion-list>
+
+		
+	<!--		
+<ion-item>
+  <ion-label>Employee</ion-label>
+  <ion-select [(ngModel)]="employee" [compareWith]="compareFn">
+    <ion-option *ngFor="let employee of employees" [value]="employee"></ion-option>
+  </ion-select>
+</ion-item>
+
 	<ion-item>
-	    <ion-label color="primary">Case Number:</ion-label>
-	    <ion-textarea placeholder=" case_number"></ion-textarea>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary">Address of Child:</ion-label>
-	    <ion-textarea placeholder="contact details"></ion-textarea>
-	</ion-item>
-	<ion-item>
+	    <ion-label stacked color="primary">Emergency Action(s):</ion-label>
+	    <ion-select [(ngModel)]="emergencyAct">
+		    	<ion-option value="e1"> </ion-option>
+		 </ion-select> 
+		</ion-item>-->
+
+ <button ion-button type="submit" block [disabled]="!f.valid">Save</button>
+
+	</form>
+	<!--<ion-item>
 	    <ion-label color="primary">Sources of Information:</ion-label>
 	    	<ion-select multiple="true">
 		    	<ion-option value="s1">Child/Family's reopened file</ion-option>
@@ -55,7 +85,7 @@
 		    	<ion-option value="o3">No reasonable cause to believe the child is suffering or at risk of harm,  but refer the family to MVCC/Service provider</ion-option>
 		    	<ion-option value="o4">No reasonable cause to believe the child is suffering or at risk of harm and no action required(case closed)</ion-option>
 		    </ion-select>
-	</ion-item>
+	</ion-item>-->
 </ion-content>
 <ion-footer padding>
 	<ion-row right>

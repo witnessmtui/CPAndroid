@@ -4,44 +4,47 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
+	<ion-list>
 	<ion-item>
-		<ion-label color="primary">Name:</ion-label>
+		<ion-label  stacked>Name:</ion-label>
 			<ion-textarea placeholder="fullname"></ion-textarea>
 	</ion-item>
 	<ion-item>
-		<ion-label color="primary">Registration number:</ion-label>
+		<ion-label stacked>Registration number:</ion-label>
 	    	<ion-textarea placeholder=" registration number"></ion-textarea>
 	</ion-item>
 	<ion-item>
-		<ion-label color="primary">Category:</ion-label>
+		<ion-label stacked >Category:</ion-label>
 			<ion-select [(ngModel)]="category">
 				<ion-option value="swo">SWO</ion-option>
 				<ion-option value="trained">Trained Officer</ion-option>
 		</ion-select>
 	</ion-item>
 	<ion-item>
-		<ion-label color="primary">Gender</ion-label>
+		<ion-label stacked>Gender</ion-label>
 			<ion-select [(ngModel)]="gender">
 	    		<ion-option value="f">Female</ion-option>
 	    		<ion-option value="m">Male</ion-option>
 	 		</ion-select>
+	 	</ion-item>
 	<ion-item>
-		<ion-label color="primary">Email:</ion-label>
+		<ion-label stacked>Email:</ion-label>
 			<ion-textarea placeholder=" email address"></ion-textarea>
 	</ion-item>
-	</ion-item>
+	
 	<ion-item>
-	    <ion-label color="primary">Phone number:</ion-label>
+	    <ion-label stacked>Phone number:</ion-label>
 	    	<ion-textarea placeholder=" +255758020001"></ion-textarea>
 	</ion-item>
 	<ion-item>
-	    <ion-label color="primary"> Password:</ion-label>
+	    <ion-label stacked> Password:</ion-label>
 	    	<ion-input placeholder="enter password"></ion-input>
 	</ion-item>
 	<ion-item>
-	    <ion-label color="primary">Re-enter Password:</ion-label>
+	    <ion-label stacked>Re-enter Password:</ion-label>
 	    	<ion-input placeholder="re-enter password"></ion-input>
 	</ion-item>
+</ion-list>
 </ion-content>
 <ion-footer>
 	<ion-row right>
