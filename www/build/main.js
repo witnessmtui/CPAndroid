@@ -152,7 +152,7 @@ var RegistrationPage = (function () {
     };
     RegistrationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-registration',template:/*ion-inline-start:"C:\Users\Ritta\CPAndroid\src\pages\registration\registration.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Registration Form</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n	<ion-list>\n\n	<ion-item>\n\n		<ion-label  stacked>Name:</ion-label>\n\n			<ion-textarea placeholder="fullname"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label stacked>Registration number:</ion-label>\n\n	    	<ion-textarea placeholder=" registration number"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label stacked >Category:</ion-label>\n\n			<ion-select [(ngModel)]="category">\n\n				<ion-option value="swo">SWO</ion-option>\n\n				<ion-option value="trained">Trained Officer</ion-option>\n\n		</ion-select>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label stacked>Gender</ion-label>\n\n			<ion-select [(ngModel)]="gender">\n\n	    		<ion-option value="f">Female</ion-option>\n\n	    		<ion-option value="m">Male</ion-option>\n\n	 		</ion-select>\n\n	 	</ion-item>\n\n	<ion-item>\n\n		<ion-label stacked>Email:</ion-label>\n\n			<ion-textarea placeholder=" email address"></ion-textarea>\n\n	</ion-item>\n\n	\n\n	<ion-item>\n\n	    <ion-label stacked>Phone number:</ion-label>\n\n	    	<ion-textarea placeholder=" +255758020001"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n	    <ion-label stacked> Password:</ion-label>\n\n	    	<ion-input placeholder="enter password"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n	    <ion-label stacked>Re-enter Password:</ion-label>\n\n	    	<ion-input placeholder="re-enter password"></ion-input>\n\n	</ion-item>\n\n</ion-list>\n\n</ion-content>\n\n<ion-footer>\n\n	<ion-row right>\n\n		<ion-col text-right>\n\n			<button ion-button (click)="onGoToSubmitReg()">Submit</button>\n\n		</ion-col>\n\n	</ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Ritta\CPAndroid\src\pages\registration\registration.html"*/,
+            selector: 'page-registration',template:/*ion-inline-start:"C:\Users\Ritta\CPAndroid\src\pages\registration\registration.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Registration Form</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n	<ion-list>\n\n	<ion-item>\n\n		<ion-label color="primary" stacked>Name:</ion-label>\n\n			<ion-textarea placeholder="fullname"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label color="primary" stacked>Registration number:</ion-label>\n\n	    	<ion-textarea placeholder=" registration number"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label color="primary" stacked >Category:</ion-label>\n\n			<ion-select [(ngModel)]="category">\n\n				<ion-option value="swo">SWO</ion-option>\n\n				<ion-option value="trained">Trained Officer</ion-option>\n\n		</ion-select>\n\n	</ion-item>\n\n	<ion-item>\n\n		<ion-label color="primary" stacked>Gender</ion-label>\n\n			<ion-select [(ngModel)]="gender">\n\n	    		<ion-option value="f">Female</ion-option>\n\n	    		<ion-option value="m">Male</ion-option>\n\n	 		</ion-select>\n\n	 	</ion-item>\n\n\n\n	<ion-item>\n\n		<ion-label color="primary" stacked>Email:</ion-label>\n\n			<ion-textarea placeholder=" email address"></ion-textarea>\n\n	</ion-item>\n\n	\n\n	<ion-item>\n\n	    <ion-label color="primary" stacked>Phone number:</ion-label>\n\n	    	<ion-textarea placeholder=" +255758020001"></ion-textarea>\n\n	</ion-item>\n\n	<ion-item>\n\n	    <ion-label color="primary" stacked> Password:</ion-label>\n\n	    	<ion-input placeholder="enter password"></ion-input>\n\n	</ion-item>\n\n	<ion-item>\n\n	    <ion-label color="primary" stacked>Re-enter Password:</ion-label>\n\n	    	<ion-input placeholder="re-enter password"></ion-input>\n\n	</ion-item>\n\n</ion-list>\n\n</ion-content>\n\n<ion-footer>\n\n	<ion-row right>\n\n		<ion-col text-right>\n\n			<button ion-button (click)="onGoToSubmitReg()">Submit</button>\n\n		</ion-col>\n\n	</ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Ritta\CPAndroid\src\pages\registration\registration.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], RegistrationPage);
@@ -230,7 +230,7 @@ var MainmenuPage = (function () {
     };
     MainmenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mainmenu',template:/*ion-inline-start:"C:\Users\Ritta\CPAndroid\src\pages\mainmenu\mainmenu.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Main Menu</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n	<ion-list>\n\n    <button ion-item>Fill forms</button>\n\n      <!-- <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr> -->\n\n	    <button ion-button clear (click)="onGoToII()">Initial Investigation</button><hr>\n\n    <button ion-item>View forms</button>  \n\n      <button ion-button clear  (click)="onGoToReceived()">Received Forms</button><hr>\n\n        <!-- <button ion-button clear (click)="onGoToIRView()"> IR View </button><hr> -->\n\n        <button ion-button clear (click)="onGoToIIView()"> II View </button><hr>\n\n      <button ion-button clear (click)="onGoToForms()">My Forms</button><hr>\n\n        <!-- <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr> -->\n\n        <button ion-button clear (click)="onGoToMyII()"> II Forms </button><hr>\n\n    <button ion-item (click)="onClickNotifications()">Notifications</button>\n\n    <button ion-item (click)="onClickEnroleCase()">Enrol Case</button>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Ritta\CPAndroid\src\pages\mainmenu\mainmenu.html"*/,
+            selector: 'page-mainmenu',template:/*ion-inline-start:"C:\Users\Ritta\CPAndroid\src\pages\mainmenu\mainmenu.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Main Menu</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n	<ion-list>\n\n    <button ion-item>Fill forms</button>\n\n      <!-- <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr> -->\n\n	    <button ion-button clear (click)="onGoToII()">Initial Investigation</button><hr>\n\n    <button ion-item>View forms</button>  \n\n      <button ion-button clear  (click)="onGoToReceived()">Received Forms</button><hr>\n\n        <!-- <button ion-button clear (click)="onGoToIRView()"> IR View </button><hr> -->\n\n        <list><button ion-button clear (click)="onGoToIIView()"> II View </button></list><hr>\n\n      <button ion-button clear (click)="onGoToForms()">My Forms</button><hr>\n\n        <!-- <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr> -->\n\n        <button ion-button clear (click)="onGoToMyII()"> II Forms </button><hr>\n\n    <button ion-item (click)="onClickNotifications()">Notifications</button>\n\n    <button ion-item (click)="onClickEnroleCase()">Enrol Case</button>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Ritta\CPAndroid\src\pages\mainmenu\mainmenu.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], MainmenuPage);
@@ -308,11 +308,11 @@ webpackEmptyAsyncContext.id = 117;
 
 var map = {
 	"../pages/enrol/enrol.module": [
-		281,
+		282,
 		6
 	],
 	"../pages/iiform/iiform.module": [
-		282,
+		281,
 		5
 	],
 	"../pages/irform/irform.module": [
@@ -328,11 +328,11 @@ var map = {
 		2
 	],
 	"../pages/notifications/notifications.module": [
-		287,
+		286,
 		1
 	],
 	"../pages/registration/registration.module": [
-		286,
+		287,
 		0
 	]
 };
@@ -508,13 +508,13 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/enrol/enrol.module#EnrolPageModule', name: 'EnrolPage', segment: 'enrol', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/iiform/iiform.module#IiformPageModule', name: 'IiformPage', segment: 'iiform', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/enrol/enrol.module#EnrolPageModule', name: 'EnrolPage', segment: 'enrol', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/irform/irform.module#IrformPageModule', name: 'IrformPage', segment: 'irform', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mainmenu/mainmenu.module#MainmenuPageModule', name: 'MainmenuPage', segment: 'mainmenu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
