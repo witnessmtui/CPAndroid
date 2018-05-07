@@ -13,6 +13,7 @@ import { MainmenuPage } from '../pages/mainmenu/mainmenu';
 import { IrformPage } from '../pages/irform/irform';
 import { IiformPage } from '../pages/iiform/iiform';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { MyformsPage } from '../pages/myforms/myforms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     MainmenuPage,
     IrformPage,
     IiformPage,
-    NotificationsPage 
+    NotificationsPage,
+    MyformsPage
 
   ],
   imports: [
@@ -43,7 +45,8 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     MainmenuPage,
     IrformPage,
     IiformPage,
-    NotificationsPage 
+    NotificationsPage,
+    MyformsPage 
   ],
   providers: [
     StatusBar,

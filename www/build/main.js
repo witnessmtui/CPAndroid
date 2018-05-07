@@ -1,4 +1,4 @@
-webpackJsonp([8],{
+webpackJsonp([9],{
 
 /***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,7 +6,7 @@ webpackJsonp([8],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IiformPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45,7 +45,7 @@ var IiformPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IiviewPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enrol_enrol__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -69,7 +69,7 @@ var IiviewPage = (function () {
     };
     IiviewPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-iiview',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/iiview/iiview.html"*/'\n<ion-header>\n  <ion-navbar>\n    <ion-title>Iiview</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <p>\n    Hi, I am II view\n<ion-footer>\n  <ion-row left><ion-col text-left>\n    <button ion-button (click)="onClickEdit()">Edit</button>\n  </ion-col>\n  <ion-col text-right>\n    <button ion-button (click)="onClickEnrol()">Enrol</button>\n  </ion-col>\n</ion-row>\n</ion-footer>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/iiview/iiview.html"*/,
+            selector: 'page-iiview',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/iiview/iiview.html"*/'\n<ion-header>\n  <ion-navbar>\n    <ion-title>Iiview</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <p>\n    Hi, All received initial referral forms will be viewed here\n<ion-footer>\n  <ion-row left><ion-col text-left>\n    <button ion-button (click)="onClickEdit()">Edit</button>\n  </ion-col>\n  <ion-col text-right>\n    <button ion-button (click)="onClickEnrol()">Enrol</button>\n  </ion-col>\n</ion-row>\n</ion-footer>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/iiview/iiview.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], IiviewPage);
@@ -86,7 +86,7 @@ var IiviewPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IrformPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -123,15 +123,11 @@ var IrformPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainmenuPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__irform_irform__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__iiform_iiform__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__irview_irview__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iiview_iiview__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__enrol_enrol__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__notifications_notifications__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__registration_registration__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mainmenu_mainmenu__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -141,6 +137,96 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
+
+var LoginPage = (function () {
+    function LoginPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    LoginPage.prototype.onGoToRegistration = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__registration_registration__["a" /* RegistrationPage */]);
+    };
+    LoginPage.prototype.onGoToMainmenu = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__mainmenu_mainmenu__["a" /* MainmenuPage */]);
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/login/login.html"*/'<<ion-header>\n  <ion-navbar>\n    <ion-title>\n     CP App\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n	<form padding>\n 	  <ion-item>\n      <ion-label color="primary" stacked>Username</ion-label>\n      <ion-input placeholder="username"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="primary" stacked>Password</ion-label>\n      <ion-input type="password" placeholder="Password"></ion-input>\n    </ion-item>\n    <ion-row center>\n      <ion-col text-center><button ion-button (click)="onGoToMainmenu()">login</button></ion-col> \n    </ion-row>\n    <ion-row center>  \n      <ion-col text-center><button ion-button clear (click)="onGoToRegistration()">Register here...</button>  \n    </ion-col> \n      </ion-row>\n  </form>\n</ion-content>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/login/login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RegistrationPage = (function () {
+    function RegistrationPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    RegistrationPage.prototype.onGoToSubmitReg = function () {
+        this.navCtrl.popToRoot();
+    };
+    RegistrationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-registration',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/registration/registration.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Registration Form</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n	<ion-item>\n		<ion-label color="primary">Name:</ion-label>\n			<ion-textarea placeholder="fullname"></ion-textarea>\n	</ion-item>\n	<ion-item>\n		<ion-label color="primary">Registration number:</ion-label>\n	    	<ion-textarea placeholder=" registration number"></ion-textarea>\n	</ion-item>\n	<ion-item>\n		<ion-label color="primary">Category:</ion-label>\n			<ion-select [(ngModel)]="category">\n				<ion-option value="swo">SWO</ion-option>\n				<ion-option value="trained">Trained Officer</ion-option>\n		</ion-select>\n	</ion-item>\n	<ion-item>\n		<ion-label color="primary">Gender</ion-label>\n			<ion-select [(ngModel)]="gender">\n	    		<ion-option value="f">Female</ion-option>\n	    		<ion-option value="m">Male</ion-option>\n	 		</ion-select>\n	<ion-item>\n		<ion-label color="primary">Email:</ion-label>\n			<ion-textarea placeholder=" email address"></ion-textarea>\n	</ion-item>\n	</ion-item>\n	<ion-item>\n	    <ion-label color="primary">Phone number:</ion-label>\n	    	<ion-textarea placeholder=" +255758020001"></ion-textarea>\n	</ion-item>\n	<ion-item>\n	    <ion-label color="primary"> Password:</ion-label>\n	    	<ion-input placeholder="enter password"></ion-input>\n	</ion-item>\n	<ion-item>\n	    <ion-label color="primary">Re-enter Password:</ion-label>\n	    	<ion-input placeholder="re-enter password"></ion-input>\n	</ion-item>\n</ion-content>\n<ion-footer>\n	<ion-row right>\n		<ion-col text-right>\n			<button ion-button (click)="onGoToSubmitReg()">Submit</button>\n		</ion-col>\n	</ion-row>\n</ion-footer>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/registration/registration.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+    ], RegistrationPage);
+    return RegistrationPage;
+}());
+
+//# sourceMappingURL=registration.js.map
+
+/***/ }),
+
+/***/ 105:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainmenuPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__irform_irform__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__iiform_iiform__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__irview_irview__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__iiview_iiview__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__enrol_enrol__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__notifications_notifications__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__myforms_myforms__ = __webpack_require__(107);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 
 
@@ -159,6 +245,7 @@ var MainmenuPage = (function () {
         this.iifrmPage = __WEBPACK_IMPORTED_MODULE_3__iiform_iiform__["a" /* IiformPage */];
         this.enrlPage = __WEBPACK_IMPORTED_MODULE_6__enrol_enrol__["a" /* EnrolPage */];
         this.ntficationsPage = __WEBPACK_IMPORTED_MODULE_7__notifications_notifications__["a" /* NotificationsPage */];
+        this.myfrmsPage = __WEBPACK_IMPORTED_MODULE_8__myforms_myforms__["a" /* MyformsPage */];
     }
     MainmenuPage.prototype.onGoToIR = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__irform_irform__["a" /* IrformPage */]);
@@ -168,9 +255,6 @@ var MainmenuPage = (function () {
     };
     MainmenuPage.prototype.onGoToIRView = function () {
         this.navCtrl.push(this.irPage);
-    };
-    MainmenuPage.prototype.onGoToIIView = function () {
-        this.navCtrl.push(this.iiPage);
     };
     MainmenuPage.prototype.onClickNotifications = function () {
         this.navCtrl.push(this.ntficationsPage);
@@ -182,11 +266,14 @@ var MainmenuPage = (function () {
         this.navCtrl.popToRoot();
     };
     MainmenuPage.prototype.onGoToMyII = function () {
-        this.navCtrl.popToRoot();
+        this.navCtrl.push(this.iiPage);
+    };
+    MainmenuPage.prototype.onGoToForms = function () {
+        this.navCtrl.push(this.myfrmsPage);
     };
     MainmenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mainmenu',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/mainmenu/mainmenu.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Main Menu</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n	<ion-list>\n    <button ion-item>Fill forms</button>\n      <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr>\n	    <button ion-button clear (click)="onGoToII()">Initial Investigation</button><hr>\n    <button ion-item>View forms</button>  \n      <button ion-button clear  (click)="onGoToReceived()">Received Forms</button><hr>\n        <button ion-button clear (click)="onGoToIRView()"> IR View </button><hr>\n        <button ion-button clear (click)="onGoToIIView()"> II View </button><hr>\n      <button ion-button clear (click)="onGoToForms()">My Forms</button><hr>\n        <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr>\n        <button ion-button clear (click)="onGoToMyII()"> II Forms </button><hr>\n    <button ion-item (click)="onClickNotifications()">Notifications</button>\n    <button ion-item (click)="onClickEnroleCase()">Enrol Case</button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/mainmenu/mainmenu.html"*/,
+            selector: 'page-mainmenu',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/mainmenu/mainmenu.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Main Menu</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n	<ion-list>\n    <button ion-item>Fill forms</button>\n     <!--  <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr> -->\n	    <button ion-button clear (click)="onGoToII()">Initial Investigation</button><hr>\n    <button ion-item>View forms</button>  \n      <button ion-button clear  (click)="onGoToReceived()">Received Forms</button><hr>\n<!--     <button ion-button clear (click)="onGoToIRView()"> IR View </button><hr>\n         <button ion-button clear (click)="onGoToIIView()"> II View </button><hr> --> \n      <button ion-button clear (click)="onGoToForms()">My Forms</button><hr>\n     <!--    <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr> -->\n        <button ion-button clear (click)="onGoToMyII()"> II Forms </button><hr>\n    <button ion-item (click)="onClickNotifications()">Notifications</button>\n    <button ion-item (click)="onClickEnroleCase()">Enrol Case</button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/mainmenu/mainmenu.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], MainmenuPage);
@@ -197,13 +284,13 @@ var MainmenuPage = (function () {
 
 /***/ }),
 
-/***/ 104:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -242,13 +329,13 @@ var NotificationsPage = (function () {
 
 /***/ }),
 
-/***/ 105:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyformsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -260,73 +347,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var RegistrationPage = (function () {
-    function RegistrationPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    RegistrationPage.prototype.onGoToSubmitReg = function () {
-        this.navCtrl.popToRoot();
-    };
-    RegistrationPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-registration',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/registration/registration.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Registration Form</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n	<ion-item>\n		<ion-label color="primary">Name:</ion-label>\n			<ion-textarea placeholder="fullname"></ion-textarea>\n	</ion-item>\n	<ion-item>\n		<ion-label color="primary">Registration number:</ion-label>\n	    	<ion-textarea placeholder=" registration number"></ion-textarea>\n	</ion-item>\n	<ion-item>\n		<ion-label color="primary">Category:</ion-label>\n			<ion-select [(ngModel)]="category">\n				<ion-option value="swo">SWO</ion-option>\n				<ion-option value="trained">Trained Officer</ion-option>\n		</ion-select>\n	</ion-item>\n	<ion-item>\n		<ion-label color="primary">Gender</ion-label>\n			<ion-select [(ngModel)]="gender">\n	    		<ion-option value="f">Female</ion-option>\n	    		<ion-option value="m">Male</ion-option>\n	 		</ion-select>\n	<ion-item>\n		<ion-label color="primary">Email:</ion-label>\n			<ion-textarea placeholder=" email address"></ion-textarea>\n	</ion-item>\n	</ion-item>\n	<ion-item>\n	    <ion-label color="primary">Phone number:</ion-label>\n	    	<ion-textarea placeholder=" +255758020001"></ion-textarea>\n	</ion-item>\n	<ion-item>\n	    <ion-label color="primary"> Password:</ion-label>\n	    	<ion-input placeholder="enter password"></ion-input>\n	</ion-item>\n	<ion-item>\n	    <ion-label color="primary">Re-enter Password:</ion-label>\n	    	<ion-input placeholder="re-enter password"></ion-input>\n	</ion-item>\n</ion-content>\n<ion-footer>\n	<ion-row right>\n		<ion-col text-right>\n			<button ion-button (click)="onGoToSubmitReg()">Submit</button>\n		</ion-col>\n	</ion-row>\n</ion-footer>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/registration/registration.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
-    ], RegistrationPage);
-    return RegistrationPage;
-}());
-
-//# sourceMappingURL=registration.js.map
-
-/***/ }),
-
-/***/ 106:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__registration_registration__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mainmenu_mainmenu__ = __webpack_require__(103);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var LoginPage = (function () {
-    function LoginPage(navCtrl, navParams) {
+/**
+ * Generated class for the MyformsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MyformsPage = (function () {
+    function MyformsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    LoginPage.prototype.onGoToRegistration = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__registration_registration__["a" /* RegistrationPage */]);
+    MyformsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MyformsPage');
     };
-    LoginPage.prototype.onGoToMainmenu = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__mainmenu_mainmenu__["a" /* MainmenuPage */]);
-    };
-    LoginPage = __decorate([
+    MyformsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/login/login.html"*/'<<ion-header>\n  <ion-navbar>\n    <ion-title>\n     CP App\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n	<form padding>\n 	  <ion-item>\n      <ion-label color="primary" stacked>Username</ion-label>\n      <ion-input placeholder="username"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label color="primary" stacked>Password</ion-label>\n      <ion-input type="password" placeholder="Password"></ion-input>\n    </ion-item>\n    <ion-row center>\n      <ion-col text-center><button ion-button (click)="onGoToMainmenu()">login</button></ion-col> \n    </ion-row>\n    <ion-row center>  \n      <ion-col text-center><button ion-button clear (click)="onGoToRegistration()">Register here...</button>  \n    </ion-col> \n      </ion-row>\n  </form>\n</ion-content>'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/login/login.html"*/,
+            selector: 'page-myforms',template:/*ion-inline-start:"/home/wity/Documents/CPAndroid/src/pages/myforms/myforms.html"*/'<!--\n  Generated template for the MyformsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Myforms</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<p>\n    Hi, All DSWO forms will be viewed here\n\n</ion-content>\n'/*ion-inline-end:"/home/wity/Documents/CPAndroid/src/pages/myforms/myforms.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], LoginPage);
-    return LoginPage;
+    ], MyformsPage);
+    return MyformsPage;
 }());
 
-//# sourceMappingURL=login.js.map
+//# sourceMappingURL=myforms.js.map
 
 /***/ }),
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -339,44 +387,48 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 117;
+webpackEmptyAsyncContext.id = 118;
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/enrol/enrol.module": [
-		279,
-		7
+		280,
+		8
 	],
 	"../pages/iiform/iiform.module": [
-		280,
-		6
+		281,
+		7
 	],
 	"../pages/iiview/iiview.module": [
-		281,
-		5
+		282,
+		6
 	],
 	"../pages/irform/irform.module": [
-		282,
-		4
+		283,
+		5
 	],
 	"../pages/login/login.module": [
-		286,
-		3
+		284,
+		4
 	],
 	"../pages/mainmenu/mainmenu.module": [
-		283,
+		285,
+		3
+	],
+	"../pages/myforms/myforms.module": [
+		286,
 		2
 	],
 	"../pages/notifications/notifications.module": [
-		284,
+		287,
 		1
 	],
 	"../pages/registration/registration.module": [
-		285,
+		288,
 		0
 	]
 };
@@ -391,12 +443,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 158;
+webpackAsyncContext.id = 159;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 159:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -424,13 +476,13 @@ var IrviewPage = (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -438,32 +490,34 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 227:
+/***/ 228:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_irview_irview__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_irview_irview__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_iiview_iiview__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_enrol_enrol__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_registration_registration__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_mainmenu_mainmenu__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_registration_registration__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_mainmenu_mainmenu__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_irform_irform__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_iiform_iiform__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_notifications_notifications__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_notifications_notifications__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_myforms_myforms__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -494,7 +548,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_mainmenu_mainmenu__["a" /* MainmenuPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_irform_irform__["a" /* IrformPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_iiform_iiform__["a" /* IiformPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_notifications_notifications__["a" /* NotificationsPage */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_notifications_notifications__["a" /* NotificationsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_myforms_myforms__["a" /* MyformsPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -504,10 +559,11 @@ var AppModule = (function () {
                         { loadChildren: '../pages/iiform/iiform.module#IiformPageModule', name: 'IiformPage', segment: 'iiform', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/iiview/iiview.module#IiviewPageModule', name: 'IiviewPage', segment: 'iiview', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/irform/irform.module#IrformPageModule', name: 'IrformPage', segment: 'irform', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mainmenu/mainmenu.module#MainmenuPageModule', name: 'MainmenuPage', segment: 'mainmenu', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/myforms/myforms.module#MyformsPageModule', name: 'MyformsPage', segment: 'myforms', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -522,7 +578,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_mainmenu_mainmenu__["a" /* MainmenuPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_irform_irform__["a" /* IrformPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_iiform_iiform__["a" /* IiformPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_notifications_notifications__["a" /* NotificationsPage */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_notifications_notifications__["a" /* NotificationsPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_myforms_myforms__["a" /* MyformsPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -538,16 +595,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 278:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -590,7 +647,7 @@ var MyApp = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnrolPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -623,5 +680,5 @@ var EnrolPage = (function () {
 
 /***/ })
 
-},[203]);
+},[204]);
 //# sourceMappingURL=main.js.map

@@ -6,6 +6,7 @@ import { IrviewPage } from '../irview/irview';
 import { IiviewPage } from '../iiview/iiview';
 import { EnrolPage } from '../enrol/enrol';
 import { NotificationsPage } from '../notifications/notifications';
+import { MyformsPage } from '../myforms/myforms';
 
 @IonicPage()
 @Component({
@@ -19,6 +20,7 @@ irfrmPage = IrformPage;
 iifrmPage = IiformPage;
 enrlPage = EnrolPage;
 ntficationsPage = NotificationsPage;
+myfrmsPage = MyformsPage;
 constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 onGoToIR(){
@@ -30,9 +32,7 @@ onGoToII(){
 onGoToIRView(){
   this.navCtrl.push(this.irPage);
   }
-onGoToIIView(){
-  this.navCtrl.push(this.iiPage);
-  }
+
 onClickNotifications(){
   this.navCtrl.push(this.ntficationsPage);
   }
@@ -43,6 +43,9 @@ onGoToMyIR(){
     this.navCtrl.popToRoot();
   }
 onGoToMyII(){
-    this.navCtrl.popToRoot();
+     this.navCtrl.push(this.iiPage);
+  }
+onGoToForms(){
+    this.navCtrl.push(this.myfrmsPage);
   }
 }

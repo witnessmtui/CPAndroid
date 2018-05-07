@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 279:
+/***/ 281:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnrolPageModule", function() { return EnrolPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IiformPageModule", function() { return IiformPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enrol__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iiform__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var EnrolPageModule = (function () {
-    function EnrolPageModule() {
+var IiformPageModule = (function () {
+    function IiformPageModule() {
     }
-    EnrolPageModule = __decorate([
+    IiformPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__enrol__["a" /* EnrolPage */],
+                __WEBPACK_IMPORTED_MODULE_2__iiform__["a" /* IiformPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__enrol__["a" /* EnrolPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__iiform__["a" /* IiformPage */]),
             ],
         })
-    ], EnrolPageModule);
-    return EnrolPageModule;
+    ], IiformPageModule);
+    return IiformPageModule;
 }());
 
-//# sourceMappingURL=enrol.module.js.map
+//# sourceMappingURL=iiform.module.js.map
 
 /***/ })
 
