@@ -12,6 +12,7 @@
 </ion-header>
 
 <ion-content padding>
+<<<<<<< HEAD
     <h4 *ngIf="filldown" (click)="viewInitial()">Fill forms <ion-icon name="ios-arrow-dropdown" ></ion-icon></h4><h4 *ngIf="fillup" (click)="closeInitial()">Fill forms <ion-icon name="ios-arrow-dropup" ></ion-icon></h4>
       <!-- <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr> -->
 	    <button ion-button clear (click)="onGoToII()" *ngIf="initial" >Initial Investigation</button><hr>
@@ -23,3 +24,20 @@
         <!-- <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr> -->
     <h4  (click)="onClickNotifications()">Notifications</h4>
 </ion-content>
+=======
+	<ion-list>
+    <button ion-item>Fill forms</button>
+     <!--  <button ion-button clear  (click)="onGoToIR()">Initial Referral</button><hr> -->
+	    <button ion-button clear (click)="onGoToII()">Initial Investigation</button><hr>
+    <button ion-item>View forms</button>  
+      <button ion-button clear  (click)="onGoToReceived()">Received Forms</button><hr>
+<!--     <button ion-button clear (click)="onGoToIRView()"> IR View </button><hr>
+         <button ion-button clear (click)="onGoToIIView()"> II View </button><hr> --> 
+      <button ion-button clear (click)="onGoToForms()">My Forms</button><hr>
+     <!--    <button ion-button clear (click)="onGoToMyIR()"> IR Forms </button><hr> -->
+        <button ion-button clear (click)="onGoToMyII()"> II Forms </button><hr>
+    <button ion-item (click)="onClickNotifications()">Notifications</button>
+    <button ion-item (click)="onClickEnroleCase()">Enrol Case</button>
+  </ion-list>
+</ion-content>
+>>>>>>> 920fd96833df0f6cdcbb32b7917d25c062a9c557

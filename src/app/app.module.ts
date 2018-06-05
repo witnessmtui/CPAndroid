@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
+<<<<<<< HEAD
 import { EnrolPage} from '../pages/enrol/enrol';
 import { RegistrationPage} from '../pages/registration/registration';
 import { MainmenuPage} from '../pages/mainmenu/mainmenu';
@@ -20,6 +21,17 @@ import { ViewFormPage } from '../pages/view-form/view-form';
 import { EditFormPage } from '../pages/edit-form/edit-form';
 import { ReceivedFormPage } from '../pages/received-form/received-form';
 
+=======
+import { IrviewPage } from '../pages/irview/irview';
+import { IiviewPage } from '../pages/iiview/iiview';
+import { EnrolPage } from '../pages/enrol/enrol';
+import { RegistrationPage } from '../pages/registration/registration';
+import { MainmenuPage } from '../pages/mainmenu/mainmenu';
+import { IrformPage } from '../pages/irform/irform';
+import { IiformPage } from '../pages/iiform/iiform';
+import { NotificationsPage } from '../pages/notifications/notifications';
+import { MyformsPage } from '../pages/myforms/myforms';
+>>>>>>> 920fd96833df0f6cdcbb32b7917d25c062a9c557
 
 @NgModule({
   declarations: [
@@ -33,9 +45,14 @@ import { ReceivedFormPage } from '../pages/received-form/received-form';
     ForgetpassPage,
     ViewOptionsPage,
     IiformPage,
+<<<<<<< HEAD
     ViewFormPage,
     ReceivedFormPage,
     NotificationsPage
+=======
+    NotificationsPage,
+    MyformsPage
+>>>>>>> 920fd96833df0f6cdcbb32b7917d25c062a9c557
 
   ],
   imports: [
@@ -57,6 +74,7 @@ import { ReceivedFormPage } from '../pages/received-form/received-form';
     RegistrationPage,
     MainmenuPage,
     IiformPage,
+<<<<<<< HEAD
     ViewOptionsPage,
     ForgetpassPage,
     ReceivedFormPage,
@@ -64,6 +82,11 @@ import { ReceivedFormPage } from '../pages/received-form/received-form';
     NotificationsPage,
     EditFormPage
       ],
+=======
+    NotificationsPage,
+    MyformsPage 
+  ],
+>>>>>>> 920fd96833df0f6cdcbb32b7917d25c062a9c557
   providers: [
     StatusBar,
     SplashScreen,
