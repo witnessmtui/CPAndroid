@@ -1,96 +1,87 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Initial Investigation form</ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content padding>
-	<form #f="ngForm" (ngSubmit)="onAddItem(f)" standalone=true>
-		<ion-list>
-			<ion-item>
-				<ion-label stacked>Name of Child:</ion-label>
-				<ion-input type="text" name="childName" placeholder="first,middle,surname" ngModel required></ion-input>
-			</ion-item>
-			<ion-item>
-				<ion-label stacked>Case Number:</ion-label>
-				<ion-input type="number" name="caseNumber" placeholder="case number" ngModel required></ion-input>
-			</ion-item>
-			<ion-item>
-				<ion-label stacked>Address of Child:</ion-label>
-				<ion-input type="number" name="contactNumber" placeholder="contact detail" ngModel required></ion-input>
-			</ion-item>
-			<ion-item>
-			<ion-label floating>Emergency Action(s):</ion-label>
-		<ion-select>
-			<ion-option *ngFor="let option of selectOptions" [value]="option"> {{option}} </ion-option>
-		</ion-select>
-	</ion-item>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Initial Investigation form</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+  	<ion-label color="primary"><h3>To be filled by {{category}} </h3></ion-label>
+      <form [formGroup]="investigation" (ngSubmit)="investigationForm()">
+        <ion-list>
+          <ion-item>
+            <ion-label stacked><h2>Child Name</h2> </ion-label>
+            <ion-input type="text" formControlName="childName" ></ion-input>
+          </ion-item>
 
-		</ion-list>
+  		<ion-item>
+  			<ion-label stacked><h2>Address of Child:</h2> </ion-label>
+  			<ion-input type="text" formControlName="contactNumber"></ion-input>
+  		  </ion-item>
 
-		
-	<!--		
-<ion-item>
-  <ion-label>Employee</ion-label>
-  <ion-select [(ngModel)]="employee" [compareWith]="compareFn">
-    <ion-option *ngFor="let employee of employees" [value]="employee"></ion-option>
-  </ion-select>
-</ion-item>
+        <ion-item>
+            <ion-label stacked><h2>Sources of Information:</h2></ion-label>
+              <ion-select formControlName="source_info">
+                <ion-option value="Child/Family's reopened file">Child/Family's reopened file</ion-option>
+                <ion-option value="Visit to the Child's home">Visit to the Child's home</ion-option>
+                <ion-option value="Interview with the Child">Interview with the Child</ion-option>
+                <ion-option value="Interview with the Parent, Carer  or Guardian">Interview with the Parent, Carer  or Guardian</ion-option>
+                <ion-option value="Interview with Siblings or Other family members">Interview with Siblings or Other family members</ion-option>
+                <ion-option value="Interview with a neighbour/Community member">Interview with a neighbour/Community member</ion-option>
+                <ion-option value="Interview with a Teache">Interview with a Teacher</ion-option>
+                <ion-option value="Interview with a Health worker">Interview with a Health worker</ion-option>
+                <ion-option value="Medical Examination">Medical Examination</ion-option>
+                <ion-option value="Other">Other</ion-option>
+              </ion-select>
+        </ion-item>
 
-	<ion-item>
-	    <ion-label stacked color="primary">Emergency Action(s):</ion-label>
-	    <ion-select [(ngModel)]="emergencyAct">
-		    	<ion-option value="e1"> </ion-option>
-		 </ion-select> 
-		</ion-item>-->
+  			<ion-item>
+  			  <ion-label stacked><h2>Challenges faced</h2> </ion-label>
+          <ion-textarea placeholder=" describe challenges faced during obtaining Information" formControlName="challenges_faced"></ion-textarea>
+  			</ion-item>
 
- <button ion-button type="submit" block [disabled]="!f.valid">Save</button>
+        <ion-item>
+      	    <ion-label stacked><h2>Emergency Action(s):</h2></ion-label>
+      	    <ion-select formControlName="emergency_action">
+      		    	<ion-option value="Police Involvement">Police Involvement</ion-option>
+      		    	<ion-option value="Medical Examination">Medical Examination</ion-option>
+      		 </ion-select>
+      	</ion-item>
 
-	</form>
-	<!--<ion-item>
-	    <ion-label color="primary">Sources of Information:</ion-label>
-	    	<ion-select multiple="true">
-		    	<ion-option value="s1">Child/Family's reopened file</ion-option>
-		    	<ion-option value="s2">Visit to the Child's home</ion-option>
-		    	<ion-option value="s3">Interview with the Child</ion-option>
-		    	<ion-option value="s4">Interview with the Parent, Carer  or Guardian</ion-option>
-		    	<ion-option value="s5">Interview with Siblings or Other family members</ion-option>
-		    	<ion-option value="s6">Interview with a neighbour/Community member</ion-option>
-		    	<ion-option value="s7">Interview with a Teacher</ion-option>
-		    	<ion-option value="s8">Interview with a Health worker</ion-option>
-		    	<ion-option value="s9">Medical Examination</ion-option>
-		    	<ion-option value="s0">Other</ion-option>
-		    <ion-textarea placeholder=" describe challenges faced during obtaining Information "></ion-textarea>
-		    </ion-select>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary">Emergency Action(s):</ion-label>
-	    <ion-select [(ngModel)]="emergencyAct">
-		    	<ion-option value="e1">Police Involvement</ion-option>
-		    	<ion-option value="e2">Medical Examination</ion-option>
-		 </ion-select>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary">Cause of Concern:</ion-label>
-	    <ion-textarea placeholder=" what harm a child suffered/at risk of suffering"></ion-textarea>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary">Risk Assessment:</ion-label>
-	    <ion-textarea placeholder=" ReasonforReferral"></ion-textarea>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary">Outcome of Investigation and Suggested Action(s):</ion-label>
-			<ion-select [(ngModel)]="outcomeofInv">
-		    	<ion-option value="o1">The child is suffering harm or is at immediate risk of significant harm and emergency action is needed to safeguard the child</ion-option>
-		    	<ion-option value="o2">Reasonable cause to believe the child is suffering or at risk of harm and further SWO interventions are required</ion-option>
-		    	<ion-option value="o3">No reasonable cause to believe the child is suffering or at risk of harm,  but refer the family to MVCC/Service provider</ion-option>
-		    	<ion-option value="o4">No reasonable cause to believe the child is suffering or at risk of harm and no action required(case closed)</ion-option>
-		    </ion-select>
-	</ion-item>-->
-</ion-content>
-<ion-footer padding>
-	<ion-row right>
-		<ion-col text-right>
-			<button ion-button (click)="onClickSubmitII()">Submit</button>
-		</ion-col>
-	</ion-row>
-</ion-footer>
+        <ion-item>
+      	    <ion-label stacked><h2>Cause of Concern:</h2></ion-label>
+      	    <ion-textarea  formControlName="cause_concern"></ion-textarea>
+      	</ion-item>
+
+        <ion-item>
+      	    <ion-label stacked><h2>Risk Assessment:</h2></ion-label>
+      	    <ion-textarea  formControlName="risk_assessment"></ion-textarea>
+      	</ion-item>
+
+        <ion-item>
+      	    <ion-label stacked><h2>Outcome of Investigation and Suggested Action(s):</h2></ion-label>
+      			<ion-select formControlName="outcome_investigation">
+      		    	<ion-option value="The child is suffering harm or is at immediate risk of significant harm and emergency action is needed to safeguard the child">The child is suffering harm or is at immediate risk of significant harm and emergency action is needed to safeguard the child</ion-option>
+      		    	<ion-option value="Reasonable cause to believe the child is suffering or at risk of harm and further SWO interventions are required">Reasonable cause to believe the child is suffering or at risk of harm and further SWO interventions are required</ion-option>
+      		    	<ion-option value="No reasonable cause to believe the child is suffering or at risk of harm,  but refer the family to MVCC/Service provider">No reasonable cause to believe the child is suffering or at risk of harm,  but refer the family to MVCC/Service provider</ion-option>
+      		    	<ion-option value="No reasonable cause to believe the child is suffering or at risk of harm and no action required(case closed)">No reasonable cause to believe the child is suffering or at risk of harm and no action required(case closed)</ion-option>
+      		    </ion-select>
+      	</ion-item>
+
+  		  <ion-item>
+      	    <ion-label stacked><h2>Comments from SWO</h2></ion-label>
+      	    <ion-textarea formControlName="comments_swo"></ion-textarea>
+      	</ion-item>
+
+        </ion-list>
+
+            <ion-grid>
+              <ion-row>
+                <ion-col col-4> <button ion-button color="secondary" type="submit" [disabled]="!investigation.valid"> Save</button></ion-col>
+              </ion-row>
+            </ion-grid>
+          </form>
+  </ion-content>
+<!--d><h2>Sources of Information:</h2></ion-label>
+  <ion-select multiple="true"  -->

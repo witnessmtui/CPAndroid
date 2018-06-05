@@ -1,26 +1,37 @@
-<<ion-header>
+<!--
+  Generated template for the ForumPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
   <ion-navbar>
-    <ion-title>
-     CP App
-    </ion-title>
+    <ion-title align="center">CP App</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-	<form padding>
- 	  <ion-item>
-      <ion-label color="primary" stacked>Username</ion-label>
-      <ion-input placeholder="username"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label color="primary" stacked>Password</ion-label>
-      <ion-input type="password" placeholder="Password"></ion-input>
-    </ion-item>
-    <ion-row center>
-      <ion-col text-center><button ion-button (click)="onGoToMainmenu()">login</button></ion-col> 
-    </ion-row>
-    <ion-row center>  
-      <ion-col text-center><button ion-button clear (click)="onGoToRegistration()">Register here...</button>  
-    </ion-col> 
-      </ion-row>
-  </form>
-</ion-content>
+
+<ion-content padding align="center">
+  <ion-label color="primary"><h3>Login to CP App</h3></ion-label>
+    <form [formGroup]="login" (ngSubmit)="logForm()">
+      <ion-list>
+          <ion-item>
+            <ion-label stacked><h2>Phone Number</h2> </ion-label>
+            <ion-input type="text" formControlName="phone_number" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked><h2>Password</h2></ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+      </ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-4> <button ion-button color="secondary" type="submit" [disabled]="!login.valid"><ion-icon name="log-in"></ion-icon><pre> </pre> Login</button></ion-col>
+              <ion-col col-8><a href="#" (click)="forgetPass()" align="center"><ion-label>Forget Password</ion-label></a></ion-col>
+            </ion-row>
+          </ion-grid>
+        </form><br>
+
+  <ion-label>You don't have an acount? <a href="#" (click)="register()">Register here</a></ion-label>
+  </ion-content>

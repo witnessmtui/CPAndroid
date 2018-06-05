@@ -1,26 +1,31 @@
 
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Enrol</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
+  <form [formGroup]="enrol" (ngSubmit)="enrolForm()">
+
 <ion-list>
   <ion-item>
       <ion-label>Enrolling Organization Unit:</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text"  formControlName="Organization_unit"></ion-input>
   </ion-item>
   <ion-item>
       <ion-label>Date of Initial Referal:</ion-label>
-      <ion-input type="Date"></ion-input>
+      <ion-input type="Date"  formControlName="date_refferal"></ion-input>
   </ion-item>
-  <ion-item>
+<!--  <ion-item>
       <ion-label>Case Sequence No:</ion-label>
-      <ion-input type="text"></ion-input>
-  </ion-item>
+      <ion-input type="text"  formControlName="case_sequence"></ion-input>
+  </ion-item>  -->
   <ion-item>
     <ion-label>Source of Referral:</ion-label>
-      <ion-select>
+      <ion-select formControlName="source_refferal">
       <ion-option >Child survivor</ion-option>
       <ion-option >Parent(s) or Guardians</ion-option>
       <ion-option >Other family member(s)</ion-option>
@@ -36,13 +41,14 @@
   </ion-item>
   <ion-item>
       <ion-label>Area/Place of incidence:</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text"  formControlName="area_incidence"></ion-input>
   </ion-item>
   </ion-list>
+  <button ion-button type="submit" [disabled]="!enrol.valid">Submit</button>
+</form>
 </ion-content>
 <ion-footer>
   <ion-row right><ion-col text-right>
-  <button ion-button (click)="onClickSubmit()">Submit</button>
   </ion-col>
   </ion-row>
 </ion-footer>

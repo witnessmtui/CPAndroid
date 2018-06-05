@@ -1,0 +1,25 @@
+<!--
+  Generated template for the ReceivedFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Received Form</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+ <ion-item *ngFor="let forms of myForms">
+  <h3>Name of Child: {{forms.childName}}</h3>
+  <h3>Case Number: {{forms.case_number}}</h3>
+  <h3>Address of Child: {{forms.contactNumber}}</h3>
+
+  <button ion-button clear item-end (click)="ViewForm(forms)">View</button>
+ </ion-item>
+</ion-list>
+</ion-content>

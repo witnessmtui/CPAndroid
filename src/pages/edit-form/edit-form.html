@@ -1,0 +1,87 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title> Edit Initial Investigation form</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+  	<ion-label color="primary"><h3>To be filled by {{category}} </h3></ion-label>
+      <form [formGroup]="investigation" (ngSubmit)="investigationForm()">
+        <ion-list>
+          <ion-item>
+            <ion-label stacked><h2>Child Name</h2> </ion-label>
+            <ion-input type="text" formControlName="childName" value= "{{form.childName}}" ></ion-input>
+          </ion-item>
+
+  		<ion-item>
+  			<ion-label stacked><h2>Address of Child:</h2> </ion-label>
+  			<ion-input type="text" formControlName="contactNumber" value="{{form.contactNumber}}"></ion-input>
+  		  </ion-item>
+
+        <ion-item>
+            <ion-label stacked><h2>Sources of Information:</h2></ion-label>
+              <ion-select formControlName="source_info">
+                <ion-option value="s1">Child/Family's reopened file</ion-option>
+                <ion-option value="s2">Visit to the Child's home</ion-option>
+                <ion-option value="s3">Interview with the Child</ion-option>
+                <ion-option value="s4">Interview with the Parent, Carer  or Guardian</ion-option>
+                <ion-option value="s5">Interview with Siblings or Other family members</ion-option>
+                <ion-option value="s6">Interview with a neighbour/Community member</ion-option>
+                <ion-option value="s7">Interview with a Teacher</ion-option>
+                <ion-option value="s8">Interview with a Health worker</ion-option>
+                <ion-option value="s9">Medical Examination</ion-option>
+                <ion-option value="s0">Other</ion-option>
+              </ion-select>
+        </ion-item>
+
+  			<ion-item>
+  			  <ion-label stacked><h2>Challenges faced</h2> </ion-label>
+          <ion-textarea placeholder="describe challenges faced during obtaining Information" formControlName="challenges_faced" value="{{form.challenges_faced}}"></ion-textarea>
+  			</ion-item>
+
+        <ion-item>
+      	    <ion-label stacked><h2>Emergency Action(s):</h2></ion-label>
+      	    <ion-select formControlName="emergency_action">
+      		    	<ion-option value="e1">Police Involvement</ion-option>
+      		    	<ion-option value="e2">Medical Examination</ion-option>
+      		 </ion-select>
+      	</ion-item>
+
+        <ion-item>
+      	    <ion-label stacked><h2>Cause of Concern:</h2></ion-label>
+      	    <ion-textarea  formControlName="cause_concern" value="{{form.cause_concern}}"></ion-textarea>
+      	</ion-item>
+
+        <ion-item>
+      	    <ion-label stacked><h2>Risk Assessment:</h2></ion-label>
+      	    <ion-textarea  formControlName="risk_assessment" value="{{form.risk_assessment}}"></ion-textarea>
+      	</ion-item>
+
+        <ion-item>
+      	    <ion-label stacked><h2>Outcome of Investigation and Suggested Action(s):</h2></ion-label>
+      			<ion-select formControlName="outcome_investigation">
+      		    	<ion-option value="o1">The child is suffering harm or is at immediate risk of significant harm and emergency action is needed to safeguard the child</ion-option>
+      		    	<ion-option value="o2">Reasonable cause to believe the child is suffering or at risk of harm and further SWO interventions are required</ion-option>
+      		    	<ion-option value="o3">No reasonable cause to believe the child is suffering or at risk of harm,  but refer the family to MVCC/Service provider</ion-option>
+      		    	<ion-option value="o4">No reasonable cause to believe the child is suffering or at risk of harm and no action required(case closed)</ion-option>
+      		    </ion-select>
+      	</ion-item>
+
+  		  <ion-item>
+      	    <ion-label stacked><h2>Comments from {{category}}</h2></ion-label>
+      	    <ion-textarea formControlName="comments_swo" value="{{form.comments_swo}}"></ion-textarea>
+      	</ion-item>
+
+        </ion-list>
+
+            <ion-grid>
+              <ion-row>
+                <ion-col col-4> <button ion-button color="secondary" type="submit" [disabled]="!investigation.valid"> Save</button></ion-col>
+              </ion-row>
+            </ion-grid>
+          </form>
+  </ion-content>
+<!--d><h2>Sources of Information:</h2></ion-label>
+  <ion-select multiple="true"  -->

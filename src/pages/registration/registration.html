@@ -4,53 +4,60 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-	<ion-list>
-	<ion-item>
-		<ion-label color="primary" stacked>Name:</ion-label>
-			<ion-textarea placeholder="fullname"></ion-textarea>
-	</ion-item>
-	<ion-item>
-		<ion-label color="primary" stacked>Registration number:</ion-label>
-	    	<ion-textarea placeholder=" registration number"></ion-textarea>
-	</ion-item>
-	<ion-item>
-		<ion-label color="primary" stacked >Category:</ion-label>
-			<ion-select [(ngModel)]="category">
-				<ion-option value="swo">SWO</ion-option>
-				<ion-option value="trained">Trained Officer</ion-option>
-		</ion-select>
-	</ion-item>
-	<ion-item>
-		<ion-label color="primary" stacked>Gender</ion-label>
-			<ion-select [(ngModel)]="gender">
-	    		<ion-option value="f">Female</ion-option>
-	    		<ion-option value="m">Male</ion-option>
-	 		</ion-select>
-	 	</ion-item>
+	<ion-label color="primary"><h3>Register to CP App</h3></ion-label>
+    <form [formGroup]="register" (ngSubmit)="regForm()">
+      <ion-list>
+        <ion-item>
+          <ion-label stacked><h2>Full Name</h2> </ion-label>
+          <ion-input type="text" formControlName="name" ></ion-input>
+        </ion-item>
 
-	<ion-item>
-		<ion-label color="primary" stacked>Email:</ion-label>
-			<ion-textarea placeholder=" email address"></ion-textarea>
-	</ion-item>
-	
-	<ion-item>
-	    <ion-label color="primary" stacked>Phone number:</ion-label>
-	    	<ion-textarea placeholder=" +255758020001"></ion-textarea>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary" stacked> Password:</ion-label>
-	    	<ion-input placeholder="enter password"></ion-input>
-	</ion-item>
-	<ion-item>
-	    <ion-label color="primary" stacked>Re-enter Password:</ion-label>
-	    	<ion-input placeholder="re-enter password"></ion-input>
-	</ion-item>
-</ion-list>
+		<ion-item>
+			<ion-label stacked><h2>Registration number</h2> </ion-label>
+			<ion-input type="text" formControlName="registration_number" ></ion-input>
+		  </ion-item>
+
+			<ion-item>
+			  <ion-label stacked><h2>Email</h2> </ion-label>
+			  <ion-input type="text" formControlName="email" ></ion-input>
+			</ion-item>
+
+          <ion-item>
+            <ion-label stacked><h2>Phone Number</h2> </ion-label>
+            <ion-input type="text" formControlName="phone_number" ></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+			<ion-label stacked ><h2>Category</h2></ion-label>
+				<ion-select formControlName="category" >
+					<ion-option value="swo">SWO</ion-option>
+					<ion-option value="trained">Trained Officer</ion-option>
+			</ion-select>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked><h2>Gender</h2></ion-label>
+				<ion-select formControlName="gender" >
+					<ion-option value="f">Female</ion-option>
+					<ion-option value="m">Male</ion-option>
+				 </ion-select>
+			 </ion-item>
+
+          <ion-item>
+            <ion-label stacked><h2>Password</h2></ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked><h2>Repeat Password</h2></ion-label>
+            <ion-input type="password" formControlName="repeat_pass"></ion-input>
+		  </ion-item>
+
+      </ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-4> <button ion-button color="secondary" type="submit" [disabled]="!register.valid"><ion-icon name="log-in"></ion-icon><pre> </pre> Register</button></ion-col>
+            </ion-row>
+          </ion-grid>
+        </form>
 </ion-content>
-<ion-footer>
-	<ion-row right>
-		<ion-col text-right>
-			<button ion-button (click)="onGoToSubmitReg()">Submit</button>
-		</ion-col>
-	</ion-row>
-</ion-footer>

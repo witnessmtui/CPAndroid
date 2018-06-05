@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ViewFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>ViewForm</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+<p>Child Name:</p><strong><p>{{form.childName}}</p></strong>
+<p>Address of the Child :</p> <strong><p>{{form.contactNumber}}</p></strong>
+<p>Case Number</p><strong><p>{{form.case_number}}</p></strong>
+<p>Source of Information:</p> <strong><p>{{form.source_info}}</p></strong>
+<p>Challenges Faced during obtaining Info:</p> <strong><p>{{form.challenges_faced}}</p></strong>
+<p>Emmergency Action:</p> <strong><p>{{form.emergency_action}}</p></strong>
+<p>Cause of Concern:</p> <strong><p>{{form.cause_concern}}</p></strong>
+<p>Risk Assessment:</p> <strong><p>{{form.risk_assessment}}</p></strong>
+<p>Outcome of Investigation:</p> <strong><p>{{form.outcome_investigation}}</p></strong>
+<p>Comments from SWO:</p> <strong><p>{{form.comments_swo}}</p></strong>
+
+</ion-content>
+<ion-footer>
+  <ion-row left><ion-col text-left>
+    <button ion-button (click)="edit()">Edit</button>
+  </ion-col>
+  <ion-col text-right>
+  <button *ngIf="swo" ion-button (click)="Enrol()">Enrol</button>
+  </ion-col>
+</ion-row>
+</ion-footer>
